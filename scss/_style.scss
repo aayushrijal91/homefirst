@@ -1,0 +1,133 @@
+@function imgUrl($file, $path: "background") {
+    @return url("../images/" + $path + "/" + $file) no-repeat;
+}
+
+header {
+    .header_topBar {
+        background-color: $white;
+        padding: 19px 0;
+        position: fixed;
+        width: 100%;
+        z-index: 1000;
+        box-shadow: 0 2.2184px 10.8703px rgba(0, 0, 0, 0.13);
+
+        .header_topBarButtons {
+            a.btn {
+                font-weight: 700;
+                border-radius: 2px;
+                line-height: 1;
+                font-size: 0.875rem;
+                padding: 10px 8px;
+
+                @include media-breakpoint-up(md) {
+                    padding: 19.5px 17px;
+                    font-size: 1.125rem;
+                }
+
+                @include media-breakpoint-up(xxl) {
+                    padding: 19.5px 27px;
+                    font-size: 1.25rem;
+                }
+            }
+        }
+    }
+
+    .banner {
+        padding-top: 202px;
+        background: $black imgUrl("mobile_banner.png") right 202px;
+
+        @include media-breakpoint-up(md) {
+            background: $black;
+            padding-top: 255px;
+        }
+
+        @include media-breakpoint-up(lg) {
+            padding-top: 196px;
+        }
+
+        @include media-breakpoint-up(xl) {
+            padding-top: 101px;
+            background: black imgUrl("banner.webp") 90% center;
+            background-size: contain;
+        }
+
+        .banner_main {
+            padding: 50px 0;
+
+            @include media-breakpoint-up(lg) {
+                padding: 100px 0;
+            }
+
+            @include media-breakpoint-up(xl) {
+                padding: 150px 0;
+            }
+
+            @include media-breakpoint-up(xxl) {
+                padding: 230px 0;
+            }
+
+            .banner_heroHeading {
+                line-height: 1;
+                font-weight: 700;
+                color: $white;
+                margin-bottom: 0;
+                font-size: 6.360625rem; // 101.77px
+                margin-bottom: 0;
+
+                @include media-breakpoint-down(xl) {
+                    font-size: 5rem;
+                }
+
+                @include media-breakpoint-down(md) {
+                    font-size: 4.5rem;
+                }
+
+                @include media-breakpoint-down(sm) {
+                    font-size: 2.5rem; // 40px;
+                }
+            }
+
+            .banner_subHeading {
+                line-height: 1.2;
+                font-weight: 700;
+                color: $white;
+                padding: 19px 0;
+                font-size: 1.25rem; // 20px
+
+                @include media-breakpoint-up(md) {
+                    padding: 65px 0 55px 0;
+                    font-size: 2.25rem; // 36px
+                }
+            }
+
+            .banner_subHeadingPricing {
+                font-style: italic;
+                line-height: 1;
+                color: $white;
+                font-weight: 800;
+                font-size: 2.25rem; // 36px
+
+                @include media-breakpoint-down(sm) {
+                    font-size: 1.2225rem;
+                }
+            }
+
+            .banner_subHeadingTagSm {
+                font-size: 1rem;
+
+                @include media-breakpoint-down(sm) {
+                    font-size: 9px;
+                }
+            }
+        }
+    }
+}
+
+footer {
+    font-size: 0.875rem;
+    background-color: #221f1f;
+
+    @include media-breakpoint-down(sm) {
+        font-size: 0.61rem;
+    }
+}
