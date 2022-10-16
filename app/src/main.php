@@ -10,16 +10,16 @@
                 <div class="col-auto px-xl-4 px-xxl-5 py-4 py-xl-0 d-lg-none d-xl-block">
                     <?= renderImg("accreditation.png", "logo", "px-md-3") ?>
                 </div>
-                <div class="col-auto col-lg-auto col-xl-auto">
-                    <div class="row no-gutters header_topBarButtons">
-                        <div class="col-auto pr-1 pr-md-2">
-                            <a href="tel:<?= $phone_number ?>" class="btn btn-block btn-dark">
+                <div class="col-lg-3">
+                    <div class="row gx-3 header_topBarButtons">
+                        <div class="col-6">
+                            <a href="tel:<?= $phone_number ?>" class="btn btn-dark">
                                 Call <?= $phone_number ?>
                             </a>
                         </div>
-                        <div class="col-auto pl-1 pl-md-2">
-                            <a href="#form" class="btn btn-block btn-primary">
-                                Book A No Obligation Inspection
+                        <div class="col-6">
+                            <a href="#form" class="btn btn-primary">
+                                Book Online
                             </a>
                         </div>
                     </div>

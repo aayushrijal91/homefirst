@@ -1,11 +1,12 @@
-$primary: #803DD4;
-$secondary: #F9A51A;
-$tertiary: #ededed;
-$black: #000000;
+$primary: #F05325;
+$secondary: #8786CE;
+$tertiary: #2E2D71;
+$dark: #1E1E23;
+$grey: #A0A0AB;
+$dark-grey: #818493;
+$light: #F0F0F8;
 $white: #ffffff;
-$light: #f3f3f3;
-$dark: #8B8B8B;
-$grey: #d9d9d9;
+$black: #1F1F24;
 
 $theme-colors: () !default;
 
@@ -52,7 +53,7 @@ $grid-breakpoints: (
     md: 768px,
     lg: 992px,
     xl: 1440px,
-    xxl: 1748px,
+    xxl: 1442px,
     ) !default;
 
 // Container sizing
